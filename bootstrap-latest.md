@@ -1,5 +1,5 @@
 ﻿---
-title: "Session Bootstrap 鈥?2026-05-23 12:51:24"
+title: "Session Bootstrap -2026-05-23 12:53:25"
 category: bootstrap
 tags: [bootstrap, session-start, system-info]
 source: generated-by-bootstrap-script
@@ -7,7 +7,7 @@ source: generated-by-bootstrap-script
 
 # Claude Code Session Bootstrap
 
-> Auto-generated: 2026-05-23 12:51:24
+> Auto-generated: 2026-05-23 12:53:25
 > Next session: read this FIRST to restore context
 
 
@@ -16,7 +16,7 @@ source: generated-by-bootstrap-script
 - OS: Windows 11 Home China 10.0.26200
 - Shell: Bash (Git Bash)
 - Home: C:/Users/16781
-- Date: 2026-05-23 12:51:24
+- Date: 2026-05-23 12:53:25
 
 ## GitHub Repo
 
@@ -67,10 +67,10 @@ source: generated-by-bootstrap-script
 
 ## Known Issues
 
-- Git clone/push to GitHub fails via git protocol (network RST) 鈥?use HTTPS with PAT token
-- GitHub raw.githubusercontent.com blocked 鈥?use api.github.com for file access
+- Git clone/push to GitHub fails via git protocol (network RST) -use HTTPS with PAT token
+- GitHub raw.githubusercontent.com blocked -use api.github.com for file access
 - VSCode extension cannot read any image format (PNG/JPG/SVG all return [Unsupported Image])
-- PowerShell encoding issues with Chinese when piped through bash curl 鈥?use Node.js for API calls with UTF-8
-- py.exe launcher not on Git Bash PATH 鈥?use full path to python.exe
-- gh CLI not installed 鈥?use curl + API token for GitHub operations
+- PowerShell encoding issues with Chinese when piped through bash curl -use Node.js for API calls with UTF-8
+- py.exe launcher not on Git Bash PATH -use full path to python.exe
+- gh CLI not installed -use curl + API token for GitHub operations
 

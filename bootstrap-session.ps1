@@ -1,4 +1,4 @@
-# Session Bootstrap — Packs all context into SmartBrain for Claude Code cold starts
+# Session Bootstrap -Packs all context into SmartBrain for Claude Code cold starts
 # Run: powershell -ExecutionPolicy Bypass -File bootstrap-session.ps1
 # Auto-run via SessionStart hook in settings.local.json
 
@@ -111,19 +111,19 @@ Write-Block "Key Paths" @"
 
 # ===== 8. KNOWN LIMITATIONS =====
 Write-Block "Known Issues" @"
-- Git clone/push to GitHub fails via git protocol (network RST) — use HTTPS with PAT token
-- GitHub raw.githubusercontent.com blocked — use api.github.com for file access
+- Git clone/push to GitHub fails via git protocol (network RST) -use HTTPS with PAT token
+- GitHub raw.githubusercontent.com blocked -use api.github.com for file access
 - VSCode extension cannot read any image format (PNG/JPG/SVG all return [Unsupported Image])
-- PowerShell encoding issues with Chinese when piped through bash curl — use Node.js for API calls with UTF-8
-- `py.exe` launcher not on Git Bash PATH — use full path to python.exe
-- gh CLI not installed — use curl + API token for GitHub operations
+- PowerShell encoding issues with Chinese when piped through bash curl -use Node.js for API calls with UTF-8
+- `py.exe` launcher not on Git Bash PATH -use full path to python.exe
+- gh CLI not installed -use curl + API token for GitHub operations
 "@
 
 # ===== WRITE BOOTSTRAP FILE =====
 $bootstrapFile = Join-Path $BootstrapDir "session-bootstrap.md"
 @"
 ---
-title: "Session Bootstrap — $timestamp"
+title: "Session Bootstrap -$timestamp"
 category: bootstrap
 tags: [bootstrap, session-start, system-info]
 source: generated-by-bootstrap-script
@@ -141,7 +141,7 @@ $output
 $indexFile = "$BaseDir\_index.json"
 $newEntry = @{
     File = "bootstrap\session-bootstrap.md"
-    Title = "Session Bootstrap — $timestamp"
+    Title = "Session Bootstrap -$timestamp"
     Category = "bootstrap"
     Tags = @("bootstrap", "session-start", "system-info")
     Source = "bootstrap-session.ps1"
