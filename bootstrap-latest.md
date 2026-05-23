@@ -1,5 +1,5 @@
 ﻿---
-title: "Session Bootstrap -2026-05-23 12:53:25"
+title: "Session Bootstrap -2026-05-23 13:21:26"
 category: bootstrap
 tags: [bootstrap, session-start, system-info]
 source: generated-by-bootstrap-script
@@ -7,7 +7,7 @@ source: generated-by-bootstrap-script
 
 # Claude Code Session Bootstrap
 
-> Auto-generated: 2026-05-23 12:53:25
+> Auto-generated: 2026-05-23 13:21:26
 > Next session: read this FIRST to restore context
 
 
@@ -16,7 +16,36 @@ source: generated-by-bootstrap-script
 - OS: Windows 11 Home China 10.0.26200
 - Shell: Bash (Git Bash)
 - Home: C:/Users/16781
-- Date: 2026-05-23 12:53:25
+- Date: 2026-05-23 13:21:26
+
+## User Profile
+
+See memory index for full profile: C:\Users\16781\.claude\projects\C--Users-16781\memory\MEMORY.md
+
+- **Role**: Windows 11 power user, not a professional developer
+- **Language**: Chinese (zh-CN), simplified communication preferred
+- **Goal**: Build Claude Code into a powerful autonomous assistant
+- **Style**: Iterative, quick feedback, minimal permission prompts
+- **Preferences**: No verbose explanations, no emoji unless asked, direct action over discussion
+
+**Active Projects (priority order):**
+1. System automation tools 鈥?app launcher, auto-start, web search, repo manager
+2. SmartBrain knowledge base 鈥?cross-session memory
+3. ggod GitHub repo 鈥?automation workspace
+4. Cave Runner game 鈥?gameplay tuning
+5. Penguin animation 鈥?visual fix (lower priority)
+
+**Current Needs:**
+- Playwright for browser automation (visual feedback loop)
+- Python scripts for system-level tasks
+- HTML/Canvas game development
+- GitHub repo management via API (not gh CLI)
+
+**Communication Rules:**
+- Keep responses short and direct
+- No /caveman unless asked
+- Flag problems immediately, don't hide behind "I'll try"
+- Show results first, explain later if needed
 
 ## GitHub Repo
 
@@ -53,7 +82,7 @@ source: generated-by-bootstrap-script
 
 - [OK] **Local Settings**: `C:/Users/16781/.claude/settings.local.json`
 - [OK] **Global Settings**: `C:/Users/16781/.claude/settings.json`
-- [-] **Memory Index**: `C:/Users/16781/.claude/projects/C--Users-16781/memory/MEMORY.md`
+- [OK] **Memory Index**: `C:/Users/16781/.claude/projects/C--Users-16781/memory/MEMORY.md`
 
 
 ## Key Paths

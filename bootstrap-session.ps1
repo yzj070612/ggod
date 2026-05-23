@@ -26,7 +26,42 @@ Write-Block "System" @"
 - Date: $timestamp
 "@
 
-# ===== 2. GITHUB REPO =====
+# ===== 2. USER PROFILE & NEEDS =====
+$userProfile = [Environment]::GetFolderPath("UserProfile")
+$memIndex = Join-Path $userProfile ".claude\projects\C--Users-16781\memory\MEMORY.md"
+$userBlock = ""
+if (Test-Path $memIndex) {
+    $userBlock = "See memory index for full profile: $memIndex`n`n"
+}
+$userBlock += @"
+- **Role**: Windows 11 power user, not a professional developer
+- **Language**: Chinese (zh-CN), simplified communication preferred
+- **Goal**: Build Claude Code into a powerful autonomous assistant
+- **Style**: Iterative, quick feedback, minimal permission prompts
+- **Preferences**: No verbose explanations, no emoji unless asked, direct action over discussion
+
+**Active Projects (priority order):**
+1. System automation tools — app launcher, auto-start, web search, repo manager
+2. SmartBrain knowledge base — cross-session memory
+3. ggod GitHub repo — automation workspace
+4. Cave Runner game — gameplay tuning
+5. Penguin animation — visual fix (lower priority)
+
+**Current Needs:**
+- Playwright for browser automation (visual feedback loop)
+- Python scripts for system-level tasks
+- HTML/Canvas game development
+- GitHub repo management via API (not gh CLI)
+
+**Communication Rules:**
+- Keep responses short and direct
+- No /caveman unless asked
+- Flag problems immediately, don't hide behind "I'll try"
+- Show results first, explain later if needed
+"@
+Write-Block "User Profile" $userBlock
+
+# ===== 3. GITHUB REPO =====
 $repoPath = "C:/Users/16781/ggod"
 if (Test-Path $repoPath) {
     $remote = (git -C $repoPath remote get-url origin 2>&1) -replace 'https://[^@]+@', 'https://***@'
